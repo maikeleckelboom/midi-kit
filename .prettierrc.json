@@ -4,7 +4,13 @@
   "tabWidth": 2,
   "trailingComma": "none",
   "printWidth": 80,
-  "json": {
-    "quoteProps": "preserve"
-  }
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "printWidth": 200
+      }
+    }
+  ]
 }

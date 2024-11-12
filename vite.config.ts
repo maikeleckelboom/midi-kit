@@ -9,6 +9,12 @@ export default defineConfig({
       formats: ['es']
     }
   },
+  test: {
+    setupFiles: ['src/setupTests.ts'],
+    coverage: {
+      exclude: ['*.config.*', '*.d.ts']
+    }
+  },
   resolve: {
     alias: {
       src: resolve('src/')
